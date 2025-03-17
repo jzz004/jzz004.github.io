@@ -1,0 +1,41 @@
+
+<p> <img src=""  id="img"> </p>
+<h1> <span id="nome"> ... </span> </h1>
+<p> <span id="gender"> ... </span> </p>
+<p> <span id="descrição"> ... </span> </p>
+
+
+
+<script>
+    async function getData() {
+        const url = "https://dragonball-api.com/api/characters/23";
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+          }
+      
+          const json = await response.json();
+          console.log(json);
+          console.log(json.name);
+          console.log(json.image);
+          console.log(json.gender);
+          console.log(json.description);      
+
+          document.getElementById('nome').innerText=json.name;
+          document.getElementById('img').src=json.image; 
+          document.getElementById('gender').innerText=json.gender;
+          document.getElementById('descrição').innerText=json.description
+          ;
+
+
+
+        } catch (error) {
+          console.error(error.message);
+        }
+      }
+
+
+
+      getData();
+</script>
