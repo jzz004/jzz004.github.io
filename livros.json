@@ -1,0 +1,43 @@
+{
+    "Ficção": [
+      { "titulo": "1984", "autor": "George Orwell" },
+      { "titulo": "Admirável Mundo Novo", "autor": "Aldous Huxley" },
+      { "titulo": "Fahrenheit 451", "autor": "Ray Bradbury" }
+    ],
+    "Tecnologia": [
+      { "titulo": "Clean Code", "autor": "Robert C. Martin" },
+      { "titulo": "O Programador Pragmático", "autor": "Andrew Hunt" },
+      { "titulo": "Design Patterns", "autor": "Erich Gamma" }
+    ],
+    "História": [
+      { "titulo": "Sapiens", "autor": "Yuval Noah Harari" },
+      { "titulo": "Guns, Germs, and Steel", "autor": "Jared Diamond" },
+      { "titulo": "O Povo Brasileiro", "autor": "Darcy Ribeiro" }
+    ],
+    "Romance": [
+      { "titulo": "Dom Casmurro", "autor": "Machado de Assis" },
+      { "titulo": "Orgulho e Preconceito", "autor": "Jane Austen" },
+      { "titulo": "A Metamorfose", "autor": "Franz Kafka" }
+    ],
+    "Ciência": [
+      { "titulo": "Uma Breve História do Tempo", "autor": "Stephen Hawking" },
+      { "titulo": "O Gene", "autor": "Siddhartha Mukherjee" },
+      { "titulo": "O Universo Numa Casca de Noz", "autor": "Stephen Hawking" }
+    ],
+    "Filosofia": [
+      { "titulo": "A República", "autor": "Platão" },
+      { "titulo": "Assim Falou Zaratustra", "autor": "Friedrich Nietzsche" },
+      { "titulo": "O Mundo de Sofia", "autor": "Jostein Gaarder" }
+    ],
+    "Biografias": [
+      { "titulo": "Steve Jobs", "autor": "Walter Isaacson" },
+      { "titulo": "Leonardo da Vinci", "autor": "Walter Isaacson" },
+      { "titulo": "Minha História", "autor": "Michelle Obama" }
+    ],
+    "Fantasia": [
+      { "titulo": "O Senhor dos Anéis", "autor": "J.R.R. Tolkien" },
+      { "titulo": "Harry Potter", "autor": "J.K. Rowling" },
+      { "titulo": "As Crônicas de Nárnia", "autor": "C.S. Lewis" }
+    ]
+  }
+  
