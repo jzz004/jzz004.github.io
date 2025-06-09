@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biblioteca</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    h2 { margin-top: 30px; color: #333; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>Catálogo da Biblioteca</h1>
+  <div id="conteudo"></div>
+
+  <script>
+    fetch('/api/livros')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('conteudo');
+        for (const categoria in data) {
+          const h2 = document.createElement('h2');
+          h2.textContent = categoria;
+          container.appendChild(h2);
+
+          const ul = document.createElement('ul');
+          data[categoria].forEach(livro => {
+            const li = document.createElement('li');
+            li.textContent = `${livro.titulo} - ${livro.autor}`;
+            ul.appendChild(li);
+          });
+          container.appendChild(ul);
+        }
+      });
+  </script>
+</body>
+</html>
